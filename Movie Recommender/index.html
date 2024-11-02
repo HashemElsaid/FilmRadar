@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmRadar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>FilmRadar</h1>
+    </header>
+    <main>
+        <section class="favorites">
+            <h2>Get Movie Recommendations Based on Your Favourite Movies!</h2>
+            <p>Let's Find Your Mood</p>
+            <input type="text" id="favorite-movie" placeholder="Search...">
+            <button onclick="addFavorite()">Search</button>
+            <ul id="movie-list"></ul>
+        </section>
+    
+        <section id="recommendations-section" class="recommendations">
+            <h2 id="recommendation-heading">Recommended Movies</h2>
+            <div id="recommendation-list" class="movie-grid">
+                <!-- Movie recommendations will appear here -->
+            </div>
+            <button id="generate-more-btn" style="display:none;" onclick="generateMore()">Generate Others</button>
+        </section>
+    </main>    
+    
+    <footer>
+        <p>&copy; 2024 FilmRadar | Designed by Hashem Elsaid</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
